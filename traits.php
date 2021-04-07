@@ -2,9 +2,10 @@
 
 class PrantClass{
     public function sayHi(){
-        return 'Hi';
+        return 'Hi from parent class';
     }
 }
+
 trait Foo{
     public function display(){
         return 'Welcome to Foo';
@@ -13,7 +14,7 @@ trait Foo{
 
 trait bar {
     public function message(){
-        return 'Hey, How are you';
+        return 'Welcome to bar';
     }
 }
 
@@ -21,7 +22,7 @@ class childClass extends PrantClass{
     use Foo;
     use bar;
     public function anotherDisplay(){
-        return 'Welcome to Another Display';
+        return 'Welcome to child class';
     }
 }
 
