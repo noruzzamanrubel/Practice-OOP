@@ -8,4 +8,4 @@ class testConstant {
 }
 
 $obj= new testConstant;
-echo $obj->area(2);
+echo $obj->area(4);
