@@ -1,32 +1,40 @@
-<?php 
+<?php
 
-class PrantClass{
-    public function sayHi(){
+class PrantClass
+{
+    public function sayHi()
+    {
         return 'Hi from parent class';
     }
 }
 
-trait Foo{
-    public function display(){
+trait Foo
+{
+    public function display()
+    {
         return 'Welcome to Foo';
     }
 }
 
-trait bar {
-    public function message(){
+trait bar
+{
+    public function message()
+    {
         return 'Welcome to bar';
     }
 }
 
-class childClass extends PrantClass{
+class childClass extends PrantClass
+{
     use Foo;
     use bar;
-    public function anotherDisplay(){
+    public function anotherDisplay()
+    {
         return 'Welcome to child class';
     }
 }
 
-$obj= new childClass();
+$obj = new childClass();
 echo $obj->sayHi();
 echo "\n";
 echo $obj->display();
